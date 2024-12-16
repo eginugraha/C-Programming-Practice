@@ -1,0 +1,20 @@
+BEGIN
+    // Declare 3 variables with integer data type
+    DECLARE integer num1, num2, sum
+
+    // Print the question for the first number
+    PRINT "Enter the first number:"
+    // Read the user's input for the first number
+    READ num1
+
+    // Print the question for the second number
+    PRINT "Enter the second number:"
+    // Read the user's input for the second number
+    READ num2
+
+    // Add the two numbers
+    sum = num1 + num2
+
+    // Display the sum result
+    PRINT "The total for the two numbers is: ", sum
+END

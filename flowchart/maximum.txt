@@ -1,0 +1,24 @@
+---
+title: flowchart nilai maksimum menggunakan pointer v1.0
+---
+flowchart TB
+    A(Begin) --> B["Initialization variable
+    n = 5;
+    array[n]
+    "]
+    B --> C[/"Output message
+    'Program nilai maksimum dari 5 data.'"/]
+    C --> D{"Is i < n ?"}
+    D -- Yes --> E[/"Output message
+    'Masukan data ke index + 1:'
+    "/]
+    E --> G[/"Input data"/]
+    G --> D
+    D -- No --> F["Initialization variable
+    *ptr = array"]
+    F --> H{"Is i < n ?"}
+    H -- Yes --> I{"Is *(array + i) > *ptr ?"}
+    I -- Yes --> K["Update ptr
+    ptr = array + i"]
+    I -- No --> H
+    H -- No --> J[/"Output maksimum data ptr"/]

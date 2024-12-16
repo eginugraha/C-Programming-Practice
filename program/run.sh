@@ -1,0 +1,1 @@
+gcc $1.c -o $1 -Wall && "/Users/eginugraha/www/lecture/semester 1/algorithm and programming/program/"$1

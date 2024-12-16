@@ -1,0 +1,29 @@
+START
+
+    DECLARE INTEGER sum, count, INITIALIZE TO 0
+    DECLARE FLOAT average, grade
+
+    PRINT "Masukkan nilai (input -1 untuk selesai):"
+
+    WHILE TRUE DO
+        PRINT "Nilai: "
+        READ grade
+
+        IF grade == -1 THEN
+            BREAK
+        END IF
+
+        sum = sum + grade
+        count = count + 1
+    END WHILE
+
+    IF count == 0 THEN
+        PRINT "Tidak ada nilai yang dimasukkan."
+    ELSE
+        average = sum / count
+        PRINT "Nilai rata-rata adalah:", FORMAT(average, 2)
+    END IF
+
+    RETURN 0
+
+END

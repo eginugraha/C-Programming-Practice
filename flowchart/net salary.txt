@@ -1,0 +1,11 @@
+---
+title: flowchart perhitungan gaji bersih karyawan v1.0
+---
+flowchart TD
+    A(Begin) --> B[/Input Gross Salary/]
+    B --> C["Calculate Tax
+    (Tax = Gross Salary * 0.10)"]
+    C --> D["Calculate Net Salary
+    (Net Salary = Gross Salary - Tax)"]
+    D --> E[/Output Net Salary/]
+    E --> F(End)
